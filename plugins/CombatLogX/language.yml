@@ -7,28 +7,28 @@ messages:
   plugin prefix: "&6&l[&fCombatLogX&6&l]&r"
   expansion prefix: "&6&l[&fCombatLogX &7- &b{expansion}&6&l]&r"
 
-  loading expansion: "Loading expansion '{name} v{version}'"
-  loaded expansions: "Loaded {amount} expansion{s}"
+  loading expansion: "Incarcarea expansiunii '{name} v{version}'"
+  loaded expansions: "Incarcat {amount} expansion{s}"
 
-  enabling expansion: "Enabling expansion '{name} v{version}'"
-  enabled expansions: "Successfully enabled {amount} expansion{s}"
+  enabling expansion: "Activarea expansiunii '{name} v{version}'"
+  enabled expansions: "Activat cu succes {amount} expansion{s}"
   
-  unknown entity name: "unknown entity"
+  unknown entity name: "entitate necunoscuta"
 
   broadcasts:
     on load: "§cCombatLogX is preloading expansions this is W.I.P, report any issues!"
-    on enable: "&2CombatLogX is now enabled."
-    on disable: "&4CombatLogX is not disabled."
+    on enable: "&2CombatLogX este acum activat."
+    on disable: "&4CombatLogX este acum dezactivat."
 
   commands:
-    no permission: "&c&oYou don't have the permission &c'&a{permission}&c'&c&o."
-    invalid target: "&c&oInvalid target &c'&a{target}&c'&c&o."
+    no permission: "&c&oNu ai permisiune &c'&a{permission}&c'&c&o."
+    invalid target: "&c&otinta invalida &c'&a{target}&c'&c&o."
 
     combatlogx:
-      reloaded: "&a&oYou have successfully reloaded all of the configs."
-      tag: "&a&oYou just forced &f{target}&a&o into combat. This may cause issues!"
-      untag: "&a&oYou just forced &f{target}&a&o out of combat. This may cause issues!"
-      not in combat: "&c&oThat player is not in combat."
+      reloaded: "&a&oAti incarcat cu succes configuratiile."
+        tag: "&a&oAi fost fortat de &f{target}&a&o sa intri in lupta. Acest lucru poate cauza probleme!"
+      untag: "&a&oAi fost fortat de &f{target}&a&o sa iesi din lupta . Acest lucru poate cauza probleme!"
+      not in combat: "&c&oAcest player nu e in combat."
       help:
       - "&f"
       - "&6&lCombatLogX Command Help:"
@@ -40,134 +40,134 @@ messages:
       - "&f"
 
     combattime:
-      not in combat: "&c&oYou are not in combat."
-      not in combat other: "&c&o{target} is not in combat."
-      time left: "&a&oYou have &c{time} seconds &a&oremaining."
-      time left other: "&f{target}&a&o has &c{time} seconds &a&oremaining"
+      not in combat: "&c&oNu esti in combat."
+      not in combat other: "&c&o{target} Nu este in combat."
+      time left: "&a&oTu ai &c{time} secunde &a&oramase."
+      time left other: "&f{target}&a&o are &c{time} secunde &a&oramase"
 
   combat:
-    expire: "&a&oYou are no longer in combat."
-    enemy death: "&a&oYour enemy has died."
+    expire: "&a&oNu mai esti in combat."
+    enemy death: "&a&oInamicul tau a murit."
     tagged:
-      attacked by player: "&c&oYou were attacked by &f{name}&c&o. Please do not log out!"
-      attacker of player: "&c&oYou attacked &f{name}&c&o. Please do not log out!"
-      attacked by mob: "&c&oYou were attacked by a(n) &f{mob_type}&c&o. Please do not log out!"
-      attacker of mob: "&c&oYou attacked a(n) &f{mob_type}&c&o. Please do not log out!"
-      unknown: "&c&oYou are now in combat. Do not log out!"
+      attacked by player: "&c&oAi fost atacat de  &f{name}&c&o. Te rog nu iesi!"
+      attacker of player: "&c&o;L-ai atacat pe &f{name}&c&o. Te rog nu iesi!"
+      attacked by mob: "&c&oAi fost atacat  de un/o &f{mob_type}&c&o. Te rog nu iesi!"
+      attacker of mob: "&c&oAi atacat un/o &f{mob_type}&c&o. Te rog nu iesi!"
+      unknown: "&c&oEsti acum in Combat. Te rog nu iesi!"
 
   expansions:
     cheat prevention:
       gamemode:
-        change: "&c&oYour gamemode was changed to &f{gamemode}&c&o because you were tagged."
-        not allowed: "&c&oYou cannot switch gamemodes during combat."
+        change: "&c&oModul de joc a fost schimbat in  &f{gamemode}&c&o deoarece ai fost lovit."
+        not allowed: "&c&oNu poti schimba modul de joc in timpul luptei."
 
       flight:
-        disabled: "&c&oYour flight was disabled because you were tagged."
-        not allowed: "&c&oYou cannot enable flight during combat."
+        disabled: "&c&oPlutirea ta a fost dezactivata deoarece ai fost atins."
+        not allowed: "&c&oNu poti zbura in timpul luptei."
 
       elytra:
-        disabled: "&c&oYour elytra was disabled because you were tagged."
-        not allowed: "&c&oYou cannot use elytra during combat."
+        disabled: "&c&oElytra ta a fost dezactivata deoarece ai fost atins."
+        not allowed: "&c&oNu poti folosi elytra in timpul luptei."
         
-      riptide not allowed: "&c&oYou cannot use riptide during combat."
+      riptide not allowed: "&c&Nu poti folosi riptide-ul in timpul luptei."
 
       command:
-        not allowed: "&c&oYou cannot execute &a{command} &c&oduring combat."
+        not allowed: "&c&oNu poti executa comanda &a{command} &c&oin timpul luptei."
 
       teleport:
         enderpearl:
-          not allowed: "&c&oYou cannot use enderpearls during combat"
+          not allowed: "&c&onu poti folosi perle in timpul luptei"
         other:
-          not allowed: "&c&oYou cannot teleport during combat."
+          not allowed: "&c&oNu te poti teleporta in timpul luptei."
 
       inventory:
-        closed: "&c&oYour inventory was closed because you were tagged."
-        not allowed: "&c&oYou cannot open inventories during combat."
+        closed: "&c&oInventarul tau a fost inchis deoarece ai fost lovit."
+        not allowed: "&c&oNu poti sa iti deschizi invetarul in timpul luptei."
 
       chat:
-        not allowed: "&c&oYou cannot send chat messages during combat."
+        not allowed: "&c&oNu poti trimite mesaje in timpul luptei."
         
       blocks:
-        breaking not allowed: "&c&oYou cannot break blocks during combat."
-        placing not allowed: "&c&oYou cannot place blocks during combat."
-        interaction not allowed: "&c&oYou cannot right-click that during combat."
+        breaking not allowed: "&c&oNu poti sparge blockuri in timpul luptei."
+        placing not allowed: "&c&oNu poti pune blockuri in timpul luptei."
+        interaction not allowed: "&c&oNu poti da click dreapta in timpul luptei."
         
       items:
-        pick up not allowed: "&c&oYou cannot pick up items during combat."
-        dropping not allowed: "&c&oYou cannot drop items during combat."
+        pick up not allowed: "&c&oNu poti lua iteme in timpul luptei."
+        dropping not allowed: "&c&oNu poti dropa iteme in timpul luptei."
         
       entities:
-        interaction not allowed: "&c&oYou cannot interact with that during combat."
+        interaction not allowed: "&c&oNu poti interecta cu acest lucru in timpul luptei."
 
 
     notcombatlogx:
-      all damage: "&c&oYou took damage. Do not log out!"
+      all damage: "&c&oAi luat damage. Te rog nu iesi!"
       damage tag:
-        contact: "&c&oYou were pricked by a cactus. Do not log out!"
-        suffocation: "&c&oYou are suffocating in a wall. Do not log out!"
-        fall: "&c&oYou fell down. Do not log out!"
-        fire: "&c&oYou walked into fire. Do not log out!"
-        fire tick: "&c&oYou are burning. Do not log out!"
-        lava: "&c&oYou are boiling in lava. Do not log out!"
-        drowning: "&c&oYou are drowning. Do not log out!"
-        block explosion: "&c&oYou were exploded by tnt. Do not log out!"
-        lightning: "&c&oZeus hates you. Do not log out!"
-        starvation: "&c&oYou are starving to death. Do not log out!"
-        poison: "&c&oYou are poisoned. Do not log out!"
-        magic: "&c&oSomeone threw a potion at you. Do not log out!"
-        wither: "&c&oYou are withering away. Do not log out!"
-        falling block: "&c&oA block fell on you. Do not log out!"
-        custom: "&c&oYou took damage from an unknown source. Do not log out!"
-        fly into wall: "&c&oYou hit a wall. Do not log out!"
-        hot floor: "&c&oThe floor is lava! Do not log out!"
-        cramming: "&c&oYou are being squished. Do not log out!"
+        contact: "&c&oAi fost lovit de un cactus. Te rog nu iesi!"
+        suffocation: "&c&oTe sufoci in pereti. Te rog nu iesi!"
+        fall: "&c&oAi cazut. Do not log out!"
+        fire: "&c&oCalci pe foc. Te rog nu iesi!"
+        fire tick: "&c&oArzi. Te rog nu iesi!"
+        lava: "&c&oFaci o baie in lava. Te rog nu iesi!"
+        drowning: "&c&oTe ineci. Te rog nu iesi!"
+        block explosion: "&c&oAi luat damage de la un tnt. Te rog nu iesi!"
+        lightning: "&c&oZeus te uraste. Te rog nu iesi!"
+        starvation: "&c&oO sa mori de foame. Te rog nu iesi!"
+        poison: "&c&oAi fost otravit. Te rog nu iesi!"
+        magic: "&c&oCineva a aruncat o potiune peste tine. Te rog nu iesi!"
+        wither: "&c&oAi fost diagnotizat cu potiunea Witherului. Te rog nu iesi!"
+        falling block: "&c&oUn block a cazut pe tine. Te rog nu iesi!"
+        custom: "&c&oAi luat damage de la o entitate necunoscuta. Te rog nu iesi!"
+        fly into wall: "&c&oAi lovit un perete. Te rog nu iesi!"
+        hot floor: "&c&oThe floor is lava! Te rog nu iesi!!"
+        cramming: "&c&oYou are being squished. Te rog nu iesi!!"
 
     factions compatibility:
-      no entry: "You cannot enter a no-pvp area during combat"
+      no entry: "Nu poti intra intr-o zona cu anti pvp cat timp esti in lupta"
 
     towny compatibility:
-      no entry: "You cannot enter a no-pvp area during combat"
+      no entry: "Nu poti intra intr-o zona cu anti pvp cat timp esti in lupta"
       
     residence compatibility:
-      no entry: "You cannot enter a no-pvp area during combat"
+      no entry: "Nu poti intra intr-o zona cu anti pvp cat timp esti in lupta"
       
     lands compatibility:
-      no entry: "You cannot enter a no-pvp area during combat"
+      no entry: "Nu poti intra intr-o zona cu anti pvp cat timp esti in lupta"
       
     red protect compatibility:
-      no entry: "You cannot enter a no-pvp area during combat"
+      no entry: "Nu poti intra intr-o zona cu anti pvp cat timp esti in lupta"
 
     worldguard compatibility:
       no entry:
-        pvp: "You cannot enter a no-pvp area during combat"
-        mob: "You cannot enter a non-mob area while tagged with a mob"
+        pvp: "Nu poti intra intr-o zona cu anti pvp cat timp esti in lupta"
+        mob: "Nu poti intra intr-o zona anti mobi cand ai atacat un mob"
 
     placeholder compatibility:
-      zero time left: "Not in combat"
+      zero time left: "Nu esti in lupta"
       unknown: "Unknown"
       status:
         fighting: "&cFighting"
         idling: "&aIdling"
-        in combat: "&aYes"
-        not in combat: "&cNo"
+        in combat: "&aDa"
+        not in combat: "&cNu"
       newbie helper:
-        in protection: "&aProtected"
-        not in protection: "&cNot Protected"
+        in protection: "&aProtejat"
+        not in protection: "&cNeprotejat"
         
     citizens compatibility:
-      kick message: "&cYou are not allowed to log back in until your clone is killed or removed."
+      kick message: "&cNu ai autorizat sa te logezi cand clona ta e omorata sau scoasa."
       
     newbie helper:
       pvp:
-        enabled: "&7&lPVP: &aEnabled"
-        disabled: "&7&lPVP: &cDisabled"
+        enabled: "&7&lPVP: &aActivat"
+        disabled: "&7&lPVP: &aDezactivat"
       no pvp:
-        self: "&c&oYou cannot hit that player while your PVP is disabled."
-        other: "&c&oThat player doesn't have pvp enabled."
+        self: "&c&oNu poti ataca un player cat timp PVP-ul este dezactivat."
+        other: "&c&oAcest player nu are PVP-ul activat."
       disabled:
-        attacker: "You attacked someone so your newbie protection was disabled."
-        expired: "Your newbie protection has expired."
+        attacker: "Ai atacat pe cineva ceea ce inseamna ca protectia ta a fost dezactivata."
+        expired: "Protectia ta a fost dezactivata."
       check:
-        format: "&a{target} has pvp set to {setting}"
+        format: "&a{target} si-a schimbat pvp-ul in {setting}"
         setting enabled: "&aON"
         setting disabled: "&cOFF"
